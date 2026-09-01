@@ -1,0 +1,136 @@
+/* Forms styles */
+.ew_cfad label.field-caption
+{
+    display: block;
+    width: 100%;
+}
+
+.ew_cfad select .stdcfcontrol
+{
+    width: 100%;
+    padding: 10px;
+}
+.ew_cfad textarea
+{
+    max-width: 100%;
+}
+
+/* error css code */
+
+.ew_cfad label.error {
+    color: red !important;
+}
+
+.ew_cfad input.error, .ew_cfad select.error  {
+
+    border: 2px solid red !important;
+}
+
+.ew_cfad textarea.error  {
+
+    border: 2px solid red !important;
+}
+
+.ew_cfad div.validation-error {
+	display:none;
+	margin:5px 0 5px 0;
+	background: #ffe2e2;
+    border: 1px solid #ff0000;
+    color: #C10000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    
+}
+
+.ew_cfad div.validation-error > div.validation-text {
+    padding: 15px;
+    
+}
+
+/* end error css code */
+
+.ew_cfad button
+{
+    padding: 6px 12px;
+
+}
+
+.ewcf_row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.ewcf_row .formControl {
+  flex: 1;
+  padding-right: 10px;
+  
+}
+
+.ewcf_row .formControl:last-child {
+  padding-right: 0 !important;
+}
+
+.ew_cfad hr {
+	border: none;
+}
+
+.ewcf_row label,
+.ewcf_row input:not([type="radio"]):not([type="checkbox"]) ,
+.ewcf_row textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+.ew_cfad .ew-checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ew_cfad .ew-checkbox-container .ew-checkbox-column {
+  flex: 1;
+}
+
+.upload_progress{
+   display:none;
+    clear:both;
+   text-align:center;
+   width:100%;
+   margin:0px;
+   padding:0px;
+   /*background-color:#fff;*/
+  /* border:1px solid #ccc;*/
+}
+
+.progress { position:relative; width:100%; max-width:100%; height:25px; border: 1px solid #54bae2; padding: 0px; margin:20px auto; background:#333333; }
+.bar { background-color: #54bae2; width:0%; height:25px; }
+.percent { position:absolute; display:inline-block; line-height: 25px; vertical-align: middle;top:0px; color:white; text-align:center; }
+.stripes {
+	animation: animate-stripes 0.6s linear infinite;
+	animation-direction: reverse;
+	animation-duration: 1.25s;
+    background-size: 30px 30px;
+    background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, .15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, .15) 50%,
+        rgba(255, 255, 255, .15) 75%,
+        transparent 75%,
+        transparent
+    );
+}
+
+@keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 60px 0;
+    }
+}
